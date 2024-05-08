@@ -51,8 +51,6 @@
 		12ED8B4F225E39B50099072A /* OutlineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B4E225E39B50099072A /* OutlineDataSource.swift */; };
 		12ED8B51225F804C0099072A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B50225F804C0099072A /* MessageView.swift */; };
 		12ED8B53225FB3530099072A /* MarcUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B52225FB3530099072A /* MarcUpdates.swift */; };
-		12ED8B5522620A8E0099072A /* libyaz.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ED8B5422620A8E0099072A /* libyaz.5.dylib */; };
-		12ED8B5722620B0B0099072A /* libyaz.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12ED8B5422620A8E0099072A /* libyaz.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		12ED8B592262805F0099072A /* icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 12ED8B582262805F0099072A /* icons.icns */; };
 		12ED8B5B226DE92D0099072A /* PrettyPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B5A226DE92D0099072A /* PrettyPrint.swift */; };
 		12ED8B5D226FAB750099072A /* RomanNumerals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B5C226FAB750099072A /* RomanNumerals.swift */; };
@@ -70,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				12ED8B5722620B0B0099072A /* libyaz.5.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +127,6 @@
 		12ED8B4E225E39B50099072A /* OutlineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineDataSource.swift; sourceTree = "<group>"; };
 		12ED8B50225F804C0099072A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		12ED8B52225FB3530099072A /* MarcUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcUpdates.swift; sourceTree = "<group>"; };
-		12ED8B5422620A8E0099072A /* libyaz.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libyaz.5.dylib; path = ../../../../../usr/local/lib/libyaz.5.dylib; sourceTree = "<group>"; };
 		12ED8B582262805F0099072A /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
 		12ED8B5A226DE92D0099072A /* PrettyPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyPrint.swift; sourceTree = "<group>"; };
 		12ED8B5C226FAB750099072A /* RomanNumerals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumerals.swift; sourceTree = "<group>"; };
@@ -146,7 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12ED8B5522620A8E0099072A /* libyaz.5.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +186,6 @@
 		12AC6AF82252EAA600A4A4A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12ED8B5422620A8E0099072A /* libyaz.5.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
