@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		121C9B922252D236004DE046 /* Beckley.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 121C9B8F2252D236004DE046 /* Beckley.xcdatamodeld */; };
-		126517042256942B00B74E96 /* Search Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126517032256942B00B74E96 /* Search Engine.swift */; };
 		129CDDA52252AF2C00E490E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129CDDA42252AF2C00E490E8 /* AppDelegate.swift */; };
 		129CDDAA2252AF2D00E490E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129CDDA92252AF2D00E490E8 /* Assets.xcassets */; };
 		129CDDD42252B0BF00E490E8 /* BrowserEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129CDDB82252B0BE00E490E8 /* BrowserEntry+CoreDataClass.swift */; };
@@ -61,6 +60,7 @@
 		12ED8B6222747AE80099072A /* Marc8ToUtf8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */; };
 		12ED8B64227778C40099072A /* Update Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B63227778C40099072A /* Update Database.swift */; };
 		12ED8B68227BA4540099072A /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B67227BA4540099072A /* OutlineView.swift */; };
+		4A8EB2842BEBB8E3004F61B2 /* Search Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EB2832BEBB8E3004F61B2 /* Search Engine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,7 +79,6 @@
 /* Begin PBXFileReference section */
 		121C9B902252D236004DE046 /* Beckley 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Beckley 2.xcdatamodel"; sourceTree = "<group>"; };
 		121C9B912252D236004DE046 /* Beckley.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beckley.xcdatamodel; sourceTree = "<group>"; };
-		126517032256942B00B74E96 /* Search Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Search Engine.swift"; path = "/Users/tslarkin/Projects/Beckley/Beckley/Search Engine.swift"; sourceTree = "<absolute>"; };
 		129CDDA12252AF2C00E490E8 /* Beckley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beckley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129CDDA42252AF2C00E490E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129CDDA92252AF2D00E490E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +138,7 @@
 		12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marc8ToUtf8.swift; sourceTree = "<group>"; };
 		12ED8B63227778C40099072A /* Update Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Update Database.swift"; sourceTree = "<group>"; };
 		12ED8B67227BA4540099072A /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		4A8EB2832BEBB8E3004F61B2 /* Search Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Search Engine.swift"; path = "../../../../../Volumes/tslarkin/Projects/Beckley 5:8:24/Beckley/Search Engine.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				12AC6B462255352300A4A4A8 /* SearchManager.swift */,
-				126517032256942B00B74E96 /* Search Engine.swift */,
+				4A8EB2832BEBB8E3004F61B2 /* Search Engine.swift */,
 				129CDDD22252B0BF00E490E8 /* RemoteSearch.swift */,
 				12AC6B48225537E700A4A4A8 /* LocalSearch.swift */,
 				129CDDCF2252B0BF00E490E8 /* MarcTranslator.swift */,
@@ -419,12 +419,12 @@
 				12ED8B402258F0920099072A /* MarcReference.swift in Sources */,
 				129CDDDE2252B0BF00E490E8 /* Loan+CoreDataClass.swift in Sources */,
 				12ED8B44225A27DE0099072A /* ReferenceDraggingSource.swift in Sources */,
-				126517042256942B00B74E96 /* Search Engine.swift in Sources */,
 				12ED8B3C2256D8090099072A /* Utilities.m in Sources */,
 				12ED8B60227241310099072A /* PrettyPrintView.swift in Sources */,
 				12ED8B6222747AE80099072A /* Marc8ToUtf8.swift in Sources */,
 				12ED8B46225A33C60099072A /* OutlineViewDragTarget.swift in Sources */,
 				129CDDE52252B0BF00E490E8 /* Subject+CoreDataClass.swift in Sources */,
+				4A8EB2842BEBB8E3004F61B2 /* Search Engine.swift in Sources */,
 				121C9B922252D236004DE046 /* Beckley.xcdatamodeld in Sources */,
 				12AC6B472255352300A4A4A8 /* SearchManager.swift in Sources */,
 				12ED8B5B226DE92D0099072A /* PrettyPrint.swift in Sources */,
@@ -562,11 +562,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = P5AAYT7AT4;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Beckley/Info.plist;
@@ -592,11 +592,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = P5AAYT7AT4;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Beckley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
