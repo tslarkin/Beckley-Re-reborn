@@ -1,0 +1,68 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 LucidaBright-Demi;\f1\fswiss\fcharset0 Helvetica-Bold;\f2\fnil\fcharset0 LucidaBright;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 Read Me: A Tour of Beckley
+\f1 \
+
+\f2\b0 This document provides a brief overview of the classes defined by Beckley, and how they relate to each other.\
+\
+
+\f0\b The Windows\
+
+\f2\b0 There are two windows. One is a panel listing Marc fields and subfields; this is called the reference. The other is the main window where the work is done. It has two views. The left view is a table listing the books in the database by author, title, and Dewey number. The right view is an outline, listing the fields and subfields of the selected book.\
+\
+
+\f0\b The Classes
+\f2\b0 \
+The classes fall into groups. One group handles searches of local and remote databases. Another group handles the reference panel, including its data source, and its drag capabilities. A third group handles the editing of the database, providing the data source for the outline, and the dragging target code for receiving field and subfield templates from the reference. The data source for the table is an array controller, whose managed object context is managed by the editor, which switches the context depending on whether the current database is local or remote.\
+\
+
+\f0\b Editing
+\f2\b0 \
+
+\f0\b MarcEditor
+\f2\b0  is in charge of editing Marcs. It has one extension for its role as a target of dragging fields and subfields from the reference panel, and another for its role as the outline view data source and delegate.\
+\
+Since the items in the Core Data file are unsorted, MarcEditor works with a sorted (by tag) array of structs of type Entry, which has two properties, a Field object, and a sorted (by tag) array of the field's subfields. These entries, stored in currentFields, are used when providing items for the outline view.\
+\
+MarcEditor also keeps track of the marc that appears in the outline view, using the variable currentMarc.\
+\
+
+\f0\b Reference
+\f2\b0 \
+
+\f0\b MarcReference
+\f2\b0  builds a dictionary based on the XML from bigmarcreference.plist or litemarcreference.plist. This dictionary has an entry for most common Marc fields and their subfields. The entries record a tag and a description. In addition, they record the possible values for Indicators. The class provides a comprehensive API for retrieving these entries. Other classes have an outlet to this reference so that they can show descriptions to the user, and, in the case of an Indicator, a set of possible values which can be selected from a popup.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 I determined that MarcReference would not get tangled in the UI, so I defined another class, 
+\f0\b ReferenceDataSource
+\f2\b0  to support the reference panel. Obviously, this implements the table view data source protocol. In addition, it has an extension to support dragging from the panel. The drag objects are instances of the MarcPasteboardItem class, which is defined in the extension file.\
+\
+
+\f0\b Search
+\f2\b0 \
+
+\f0\b SearchManager
+\f2\b0  is the controller for the search field and the popup for selecting search engines. At any time, one of the engines is in use. This is either a unique local engine, or one of a number of remote engines, which are accessed through Z29 URLs.\
+\
+The search field works as a filter on the local database. When it is nil, all the records appear. It works the opposite way on a remote database; when it is nil, no records appear.\
+\
+Besides managing the engines, the search manager mediates the copying of records from remote databases into the local database.\
+\
+
+\f0\b SearchEngine
+\f2\b0  is a protocol for search engines, of which there are two varieties, local and remote. The protocol is designed so that the search manager's search method will work with both varieties without having to know which is which. Because of the difference in the meaning of search mentioned in the previous paragraph, the local engine's search function is a no-op, as is the remote engine's filter predicate method.\
+\
+
+\f0\b MarcTranslator
+\f2\b0  converts the bytes of a Marc8 record into instances of the Core Data entities.\
+\
+
+\f0\b Zoom
+\f2\b0  is the interface to the Yaz Zoom functions for submitting queries and retrieving results from Z29 databases. In another life, I would have just used Marc8 records, and spared myself the extra work of translating them to Core Data. But maybe that wouldn't have been as good an idea as it seems to me at this moment.}
