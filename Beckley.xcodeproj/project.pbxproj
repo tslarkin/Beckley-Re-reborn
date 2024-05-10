@@ -58,7 +58,7 @@
 		12ED8B6222747AE80099072A /* Marc8ToUtf8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */; };
 		12ED8B64227778C40099072A /* Update Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B63227778C40099072A /* Update Database.swift */; };
 		12ED8B68227BA4540099072A /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B67227BA4540099072A /* OutlineView.swift */; };
-		4A8EB2842BEBB8E3004F61B2 /* Search Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EB2832BEBB8E3004F61B2 /* Search Engine.swift */; };
+		4A8EB2862BEE35FA004F61B2 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EB2852BEE35FA004F61B2 /* SearchEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -134,7 +134,7 @@
 		12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marc8ToUtf8.swift; sourceTree = "<group>"; };
 		12ED8B63227778C40099072A /* Update Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Update Database.swift"; sourceTree = "<group>"; };
 		12ED8B67227BA4540099072A /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
-		4A8EB2832BEBB8E3004F61B2 /* Search Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Search Engine.swift"; path = "../../../../../Volumes/tslarkin/Projects/Beckley 5:8:24/Beckley/Search Engine.swift"; sourceTree = "<group>"; };
+		4A8EB2852BEE35FA004F61B2 /* SearchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,7 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				12AC6B462255352300A4A4A8 /* SearchManager.swift */,
-				4A8EB2832BEBB8E3004F61B2 /* Search Engine.swift */,
+				4A8EB2852BEE35FA004F61B2 /* SearchEngine.swift */,
 				129CDDD22252B0BF00E490E8 /* RemoteSearch.swift */,
 				12AC6B48225537E700A4A4A8 /* LocalSearch.swift */,
 				129CDDCF2252B0BF00E490E8 /* MarcTranslator.swift */,
@@ -418,7 +418,7 @@
 				12ED8B6222747AE80099072A /* Marc8ToUtf8.swift in Sources */,
 				12ED8B46225A33C60099072A /* OutlineViewDragTarget.swift in Sources */,
 				129CDDE52252B0BF00E490E8 /* Subject+CoreDataClass.swift in Sources */,
-				4A8EB2842BEBB8E3004F61B2 /* Search Engine.swift in Sources */,
+				4A8EB2862BEE35FA004F61B2 /* SearchEngine.swift in Sources */,
 				121C9B922252D236004DE046 /* Beckley.xcdatamodeld in Sources */,
 				12AC6B472255352300A4A4A8 /* SearchManager.swift in Sources */,
 				12ED8B5B226DE92D0099072A /* PrettyPrint.swift in Sources */,

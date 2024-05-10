@@ -48,8 +48,7 @@ class ReferenceDataSource: NSObject, NSTableViewDataSource, NSTableViewDelegate 
 		if sender.stringValue.count == 0 {
 			filteredFields = sortedFields
 		} else {
-			let fieldPredicate = NSPredicate(format: "field.description contains[cd] %@", sender.stringValue)
-			filteredFields = sortedFields.filter({ fieldPredicate.evaluate(with: $0) })
+			filteredFields = sortedFields.filter({ entry in entry.field.description.contains(sender.stringValue) })
 		}
 		fieldTableView.reloadData()
 		subfieldTableView.reloadData()

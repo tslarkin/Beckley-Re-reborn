@@ -86,20 +86,20 @@ extension Marc {
 	
 	func linkField(for field: Field)->Field? {
 		return nil
-		var linkField: Field? = nil
-		if let linkEntry = field.subfield(for: "6"),
-			let text = linkEntry.text {
-			let linkTag = String(text.prefix(3))
-			let linkSubfieldTag6 = field.tag! + text.suffix(3)
-			if let fields = repeatedTags(linkTag) {
-				linkField = fields.first(where: {
-					if let text = $0.subfieldText(for: "6") {
-						return text.prefix(6) == linkSubfieldTag6 }
-					else { return false }
-				})
-			}
-		}
-		return linkField
+//        var linkField: Field? = nil
+//        if let linkEntry = field.subfield(for: "6"),
+//            let text = linkEntry.text {
+//            let linkTag = String(text.prefix(3))
+//            let linkSubfieldTag6 = field.tag! + text.suffix(3)
+//            if let fields = repeatedTags(linkTag) {
+//                linkField = fields.first(where: {
+//                    if let text = $0.subfieldText(for: "6") {
+//                        return text.prefix(6) == linkSubfieldTag6 }
+//                    else { return false }
+//                })
+//            }
+//        }
+//        return linkField
 	}
 	
 	func completeText(for field: Field, _ subfieldTag: String)-> String? {

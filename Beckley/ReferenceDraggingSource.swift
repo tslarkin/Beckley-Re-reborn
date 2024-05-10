@@ -86,7 +86,14 @@ extension ReferenceDataSource {
 				let subfield = fieldEntry.subfields[index]
 				dragData.append(MarcPasteboardItem(fieldTag: fieldEntry.field.tag, subfieldTag: subfield.tag, repeating: subfield.repeating))
 			}
-		} else { return false }
+		}
+        else if tableView == fieldTableView {
+            let fieldIndex = fieldTableView.selectedRow
+            let fieldEntry = filteredFields[fieldIndex]
+            dragData.append(MarcPasteboardItem(fieldTag:
+                fieldEntry.field.tag,
+                subfieldTag: "", repeating: false))
+        } else { return false }
 		pboard.writeObjects(dragData)
 		return true
 	}	
