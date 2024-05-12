@@ -48,7 +48,9 @@ class ReferenceDataSource: NSObject, NSTableViewDataSource, NSTableViewDelegate 
 		if sender.stringValue.count == 0 {
 			filteredFields = sortedFields
 		} else {
-			filteredFields = sortedFields.filter({ entry in entry.field.description.contains(sender.stringValue) })
+			filteredFields = sortedFields.filter({ entry in entry.field.description.contains(sender.stringValue)
+                || entry.field.tag.starts(with: (sender.stringValue))
+            })
 		}
 		fieldTableView.reloadData()
 		subfieldTableView.reloadData()

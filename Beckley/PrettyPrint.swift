@@ -219,8 +219,11 @@ extension Marc {
 		}
         if s.count > 0 {
             s += "\n"
-		} else if let authors = repeatedTags("700") {
-			let text = authors.map { completeText(for: $0, "a")! }
+        } else if let authors = repeatedTags("700") {
+            let text = authors.map({ (author: Field) -> (String) in
+                let t: String? = self.completeText(for:author, "a")
+                return t == nil ? "" : t!
+            })
 			switch text.count {
 			case 1: s = text[0]
 			case 2: s = text[0] + " and " + text[1]

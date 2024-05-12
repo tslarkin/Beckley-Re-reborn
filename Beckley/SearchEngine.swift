@@ -38,7 +38,7 @@ extension SearchEngine {
 			.filter( { searchKeys.index(forKey: $0.code) != nil })
 			.enumerated() {
 			let item = NSMenuItem(title: values.name,
-								  action: #selector(SearchManager.setSearchKey(_:)), keyEquivalent: "\(i+1)")
+								  action: #selector(SearchManager.setSearchKey(_:)), keyEquivalent: "")
 			item.tag = values.code
 			item.isEnabled = true
 			menu.addItem(item)

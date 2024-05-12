@@ -90,6 +90,9 @@ class RemoteSearch: NSObject, SearchEngine {
 	
 	func gettingResults(_ partialResults: [Data]) {
 		for result in partialResults {
+            if ( result.count == 0) {
+                continue
+            }
 			let marc = makeMarc(result, moc: moc!, isOxford: false)
 			results[marc] = result
 		}

@@ -56,12 +56,10 @@ class SearchManager: NSResponder {
 					searchField.searchMenuTemplate = remoteEngine?.searchMenuTemplates()
 					currentEngine = remoteEngine
 					searchField.sendsWholeSearchString = true
-					searchField.placeholderString = "Author"
 					searchField.stringValue = ""
+                    setItemOn(searchField.searchMenuTemplate!.items[3])
+                    //searchCode = 9
 				}
-			}
-			if let menu = searchField.searchMenuTemplate {
-				menu.items[0].state = .on
 			}
             guard let currentEngine = currentEngine else { return }
             currentEngine.prepareContext()
@@ -108,23 +106,21 @@ class SearchManager: NSResponder {
 		currentEngine = localEngine
 		searchField.searchMenuTemplate = currentEngine?.searchMenuTemplates()
 		if let menu = searchField.searchMenuTemplate {
-			menu.items[0].state = .on
+			setItemOn(menu.items[0])
 		}
-		searchField.placeholderString = "Author"
 		let window = searchField.window
 		nextResponder = window?.nextResponder
 		window?.nextResponder = self
 	}
+    
+    func setItemOn(_ item: NSMenuItem) {
+        searchCode = item.tag // == 1013 ? 1003 : item.tag
+        searchField.placeholderString = item.title
+        searchField.stringValue = ""
+    }
 	
 	@objc func setSearchKey(_ item: NSMenuItem) {
-		if let menu = item.menu {
-			menu.items.forEach({ $0.state = .off})
-		}
-		item.state = .on
-		// The standard search key for Author is 1003. However, this number is
-		// reserved by NSSearchField for NSSearchField.noRecentsMenuItemTag.
-		// So the tag on the menu is 1013, which must be decoded here.
-		searchCode = item.tag // == 1013 ? 1003 : item.tag
-		searchField.placeholderString = item.title
+        print("Current menu for \(item.title) is \(item.menu!)")
+        setItemOn(item)
 	}
 }

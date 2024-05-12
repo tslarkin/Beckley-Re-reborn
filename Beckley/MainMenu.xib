@@ -720,7 +720,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1060" height="828"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1060" height="828"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -736,7 +736,7 @@
                                         <rect key="frame" x="10" y="10" width="508" height="778"/>
                                         <clipView key="contentView" id="FHc-aN-49N">
                                             <rect key="frame" x="1" y="0.0" width="506" height="777"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="marctable" rowSizeStyle="automatic" headerView="7hb-fc-3wz" viewBased="YES" id="XaZ-8B-VFq">
                                                     <rect key="frame" x="0.0" y="0.0" width="506" height="752"/>
@@ -965,7 +965,7 @@
                                         <rect key="frame" x="10" y="40" width="502" height="538"/>
                                         <clipView key="contentView" id="p7C-sR-6N6">
                                             <rect key="frame" x="1" y="0.0" width="500" height="537"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <outlineView identifier="outlineview" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" multipleSelection="NO" autosaveName="outlineview" rowSizeStyle="automatic" headerView="a0w-yD-Fnn" viewBased="YES" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="WmF-UC-hvw" id="GY4-gF-JIW" customClass="OutlineView" customModule="Beckley" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="500" height="512"/>
@@ -1176,15 +1176,15 @@
                                     <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Da-z2-czO">
                                         <rect key="frame" x="10" y="586" width="502" height="202"/>
                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="DVi-V4-aJ8">
-                                            <rect key="frame" x="0.0" y="0.0" width="502" height="202"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="487" height="202"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" id="rLI-zi-QSd" customClass="PrettyPrintView" customModule="Beckley" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="502" height="202"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="487" height="202"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="502" height="202"/>
+                                                    <size key="minSize" width="487" height="202"/>
                                                     <size key="maxSize" width="512" height="10000000"/>
                                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 </textView>
@@ -1236,7 +1236,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="272" y="176" width="469" height="635"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="CAN-fT-6Gh">
                 <rect key="frame" x="0.0" y="0.0" width="469" height="635"/>
                 <autoresizingMask key="autoresizingMask"/>

@@ -161,12 +161,12 @@ extension MarcEditor {
 			item.text = sender.stringValue
 			if let marc = item.field?.marc {
 				marc.updateFromTags()
-				let index = (marcController.arrangedObjects as! Array<Marc>)
-					.firstIndex(of: marc)!
-				tableView.reloadData(forRowIndexes: IndexSet(integer: index), columnIndexes: IndexSet(integersIn: 0...2))
-				let pretty = marc.prettyPrint(width: prettyPrintView.frame.size.width)
-				prettyPrintView.textStorage?.setAttributedString(pretty)
-
+				if let index = (marcController.arrangedObjects as! Array<Marc>)
+                    .firstIndex(of: marc) {
+                    tableView.reloadData(forRowIndexes: IndexSet(integer: index), columnIndexes: IndexSet(integersIn: 0...2))
+                    let pretty = marc.prettyPrint(width: prettyPrintView.frame.size.width)
+                    prettyPrintView.textStorage?.setAttributedString(pretty)
+                }
 			}
 		}
 	}
