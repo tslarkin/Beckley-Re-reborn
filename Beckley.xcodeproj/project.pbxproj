@@ -556,11 +556,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P5AAYT7AT4;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Beckley/Info.plist;
@@ -586,11 +586,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P5AAYT7AT4;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Beckley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
