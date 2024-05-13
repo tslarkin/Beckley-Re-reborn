@@ -58,7 +58,9 @@
 		12ED8B6222747AE80099072A /* Marc8ToUtf8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */; };
 		12ED8B64227778C40099072A /* Update Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B63227778C40099072A /* Update Database.swift */; };
 		12ED8B68227BA4540099072A /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B67227BA4540099072A /* OutlineView.swift */; };
+		4A0184A12BF2526B00F84760 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0184A02BF2526B00F84760 /* Info.plist */; };
 		4A8EB2862BEE35FA004F61B2 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EB2852BEE35FA004F61B2 /* SearchEngine.swift */; };
+		4AF84DD42BF24B5A00A1202C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF84DD32BF24B5A00A1202C /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -114,7 +116,6 @@
 		12AC6B352254DA7400A4A4A8 /* Marc8ToUTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marc8ToUTF8.h; sourceTree = "<group>"; };
 		12AC6B372254DA7400A4A4A8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		12AC6B3B2254DFF600A4A4A8 /* codetables.dictionary */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = codetables.dictionary; sourceTree = "<group>"; };
-		12AC6B3D22552DF300A4A4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/tslarkin/Projects/Beckley/Beckley/Info.plist; sourceTree = "<absolute>"; };
 		12AC6B462255352300A4A4A8 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		12AC6B48225537E700A4A4A8 /* LocalSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearch.swift; sourceTree = "<group>"; };
 		12DA404322566E9A00C197E0 /* Beckley-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beckley-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -134,7 +135,9 @@
 		12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marc8ToUtf8.swift; sourceTree = "<group>"; };
 		12ED8B63227778C40099072A /* Update Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Update Database.swift"; sourceTree = "<group>"; };
 		12ED8B67227BA4540099072A /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		4A0184A02BF2526B00F84760 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8EB2852BEE35FA004F61B2 /* SearchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
+		4AF84DD32BF24B5A00A1202C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF84DD42BF24B5A00A1202C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +179,7 @@
 				12AC6B3E22552E0D00A4A4A8 /* Reference */,
 				121C9B8F2252D236004DE046 /* Beckley.xcdatamodeld */,
 				129CDDAF2252AF2D00E490E8 /* Beckley.entitlements */,
-				12AC6B3D22552DF300A4A4A8 /* Info.plist */,
+				4A0184A02BF2526B00F84760 /* Info.plist */,
 				129CDDF52252C63500E490E8 /* MainMenu.xib */,
 				129CDDA92252AF2D00E490E8 /* Assets.xcassets */,
 				12ED8B582262805F0099072A /* icons.icns */,
@@ -186,6 +190,7 @@
 		12AC6AF82252EAA600A4A4A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AF84DD32BF24B5A00A1202C /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -336,6 +341,14 @@
 					129CDDA02252AF2C00E490E8 = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -370,6 +383,7 @@
 				129CDDEC2252B0BF00E490E8 /* remote.bib in Resources */,
 				12ED8B592262805F0099072A /* icons.icns in Resources */,
 				129CDDF62252C63500E490E8 /* MainMenu.xib in Resources */,
+				4A0184A12BF2526B00F84760 /* Info.plist in Resources */,
 				129CDDE72252B0BF00E490E8 /* ecbdlist all.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,8 +570,8 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = P5AAYT7AT4;
@@ -586,8 +600,8 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = P5AAYT7AT4;
