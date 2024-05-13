@@ -736,7 +736,7 @@
                                         <rect key="frame" x="10" y="10" width="508" height="778"/>
                                         <clipView key="contentView" id="FHc-aN-49N">
                                             <rect key="frame" x="1" y="0.0" width="506" height="777"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="marctable" rowSizeStyle="automatic" headerView="7hb-fc-3wz" viewBased="YES" id="XaZ-8B-VFq">
                                                     <rect key="frame" x="0.0" y="0.0" width="506" height="752"/>
@@ -965,7 +965,7 @@
                                         <rect key="frame" x="10" y="40" width="502" height="538"/>
                                         <clipView key="contentView" id="p7C-sR-6N6">
                                             <rect key="frame" x="1" y="0.0" width="500" height="537"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <outlineView identifier="outlineview" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" multipleSelection="NO" autosaveName="outlineview" rowSizeStyle="automatic" headerView="a0w-yD-Fnn" viewBased="YES" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="WmF-UC-hvw" id="GY4-gF-JIW" customClass="OutlineView" customModule="Beckley" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="500" height="512"/>
@@ -1177,7 +1177,7 @@
                                         <rect key="frame" x="10" y="586" width="502" height="202"/>
                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="DVi-V4-aJ8">
                                             <rect key="frame" x="0.0" y="0.0" width="487" height="202"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" id="rLI-zi-QSd" customClass="PrettyPrintView" customModule="Beckley" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="487" height="202"/>
@@ -1195,7 +1195,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="2UN-dq-hBB">
-                                            <rect key="frame" x="486" y="0.0" width="16" height="202"/>
+                                            <rect key="frame" x="487" y="0.0" width="15" height="202"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>

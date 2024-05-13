@@ -41,9 +41,8 @@ class SearchManager: NSResponder {
 				searchField.searchMenuTemplate = localEngine?.searchMenuTemplates()
                 currentEngine = localEngine
                 searchField.sendsWholeSearchString = false
-				searchField.placeholderString = "Author"
-				searchField.stringValue = ""
-				if nextMarc != nil {
+                setItemOn(searchField.searchMenuTemplate!.items[0])
+                if nextMarc != nil {
 					DispatchQueue.main.async {
 						self.marcEditor.display(self.nextMarc!)
 					}
@@ -56,7 +55,6 @@ class SearchManager: NSResponder {
 					searchField.searchMenuTemplate = remoteEngine?.searchMenuTemplates()
 					currentEngine = remoteEngine
 					searchField.sendsWholeSearchString = true
-					searchField.stringValue = ""
                     setItemOn(searchField.searchMenuTemplate!.items[3])
                     //searchCode = 9
 				}
@@ -68,6 +66,7 @@ class SearchManager: NSResponder {
 		}
 	}
 	
+    // Used to populate the Search Engines Popup with menu items.
 	@objc dynamic var searchEngineNames: [String] {
 		get {
 			return searchEngines.map{ $0.name }
@@ -105,9 +104,7 @@ class SearchManager: NSResponder {
 		remoteEngine = RemoteSearch()
 		currentEngine = localEngine
 		searchField.searchMenuTemplate = currentEngine?.searchMenuTemplates()
-		if let menu = searchField.searchMenuTemplate {
-			setItemOn(menu.items[0])
-		}
+        setItemOn(searchField.searchMenuTemplate!.items[0])
 		let window = searchField.window
 		nextResponder = window?.nextResponder
 		window?.nextResponder = self
@@ -120,7 +117,6 @@ class SearchManager: NSResponder {
     }
 	
 	@objc func setSearchKey(_ item: NSMenuItem) {
-        print("Current menu for \(item.title) is \(item.menu!)")
         setItemOn(item)
 	}
 }
