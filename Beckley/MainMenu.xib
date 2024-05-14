@@ -136,7 +136,7 @@
                             </menuItem>
                             <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
                                 <connections>
-                                    <action selector="saveDocument:" target="-1" id="teZ-XB-qJY"/>
+                                    <action selector="saveAction:" target="Voe-Tx-rLC" id="YRZ-DJ-VBA"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
@@ -736,7 +736,7 @@
                                         <rect key="frame" x="10" y="10" width="508" height="778"/>
                                         <clipView key="contentView" id="FHc-aN-49N">
                                             <rect key="frame" x="1" y="0.0" width="506" height="777"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveName="marctable" rowSizeStyle="automatic" headerView="7hb-fc-3wz" viewBased="YES" id="XaZ-8B-VFq">
                                                     <rect key="frame" x="0.0" y="0.0" width="506" height="752"/>
@@ -965,7 +965,7 @@
                                         <rect key="frame" x="10" y="40" width="502" height="538"/>
                                         <clipView key="contentView" id="p7C-sR-6N6">
                                             <rect key="frame" x="1" y="0.0" width="500" height="537"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <outlineView identifier="outlineview" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" multipleSelection="NO" autosaveName="outlineview" rowSizeStyle="automatic" headerView="a0w-yD-Fnn" viewBased="YES" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="WmF-UC-hvw" id="GY4-gF-JIW" customClass="OutlineView" customModule="Beckley" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="500" height="512"/>
@@ -1177,7 +1177,7 @@
                                         <rect key="frame" x="10" y="586" width="502" height="202"/>
                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="DVi-V4-aJ8">
                                             <rect key="frame" x="0.0" y="0.0" width="487" height="202"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" id="rLI-zi-QSd" customClass="PrettyPrintView" customModule="Beckley" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="487" height="202"/>
@@ -1249,7 +1249,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" id="hzU-1G-Eu4">
                                     <rect key="frame" x="1" y="1" width="467" height="266"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" multipleSelection="NO" autosaveColumns="NO" id="zJJ-5B-qZu">
                                             <rect key="frame" x="0.0" y="0.0" width="467" height="266"/>
@@ -1306,7 +1306,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" id="J5W-Y4-ish">
                                     <rect key="frame" x="1" y="1" width="467" height="315"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" tag="1" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" autosaveColumns="NO" id="6SJ-CD-ZzT">
                                             <rect key="frame" x="0.0" y="0.0" width="467" height="315"/>
