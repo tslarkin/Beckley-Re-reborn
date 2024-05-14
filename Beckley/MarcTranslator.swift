@@ -26,7 +26,11 @@ let subfieldSeparator = "$"
 @discardableResult func makeMarc(_ raw: Data, moc: NSManagedObjectContext, isOxford: Bool)-> Marc
 {
 	func dataToInt(_ data: Data)-> Int {
-		return Int(data.reduce(0, { $0 * 10 + Int($1 - 48) }))
+		return Int(data.reduce(0, {
+                                let a = ($0 * 10)
+                                let b = Int($1 - 48)
+                                return a + b
+        }))
 	}
 	
 	func dataToString(_ data: Data)-> String {

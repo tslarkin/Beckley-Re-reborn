@@ -58,6 +58,8 @@
 		12ED8B6222747AE80099072A /* Marc8ToUtf8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */; };
 		12ED8B64227778C40099072A /* Update Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B63227778C40099072A /* Update Database.swift */; };
 		12ED8B68227BA4540099072A /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ED8B67227BA4540099072A /* OutlineView.swift */; };
+		1CBF87552BF3FB9000F22A9B /* libyaz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBF87542BF3FB9000F22A9B /* libyaz.a */; };
+		1CBF87572BF3FC1100F22A9B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBF87562BF3FC1100F22A9B /* CloudKit.framework */; };
 		4A0184A12BF2526B00F84760 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0184A02BF2526B00F84760 /* Info.plist */; };
 		4A8EB2862BEE35FA004F61B2 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8EB2852BEE35FA004F61B2 /* SearchEngine.swift */; };
 /* End PBXBuildFile section */
@@ -134,6 +136,8 @@
 		12ED8B6122747AE80099072A /* Marc8ToUtf8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marc8ToUtf8.swift; sourceTree = "<group>"; };
 		12ED8B63227778C40099072A /* Update Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Update Database.swift"; sourceTree = "<group>"; };
 		12ED8B67227BA4540099072A /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		1CBF87542BF3FB9000F22A9B /* libyaz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyaz.a; path = ../../../../usr/local/lib/libyaz.a; sourceTree = "<group>"; };
+		1CBF87562BF3FC1100F22A9B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4A0184A02BF2526B00F84760 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8EB2852BEE35FA004F61B2 /* SearchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +147,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CBF87552BF3FB9000F22A9B /* libyaz.a in Frameworks */,
+				1CBF87572BF3FC1100F22A9B /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +193,8 @@
 		12AC6AF82252EAA600A4A4A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CBF87562BF3FC1100F22A9B /* CloudKit.framework */,
+				1CBF87542BF3FB9000F22A9B /* libyaz.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -492,7 +500,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = /opt/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -550,7 +558,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = /opt/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -566,11 +574,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P5AAYT7AT4;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Beckley/Info.plist;
@@ -596,11 +604,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = Beckley/Beckley.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P5AAYT7AT4;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Beckley/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
