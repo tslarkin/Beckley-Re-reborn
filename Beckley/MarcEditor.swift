@@ -103,7 +103,8 @@ var itemsAreExpandable = true
 		outlineView.registerForDraggedTypes([.marcPasteboardItem])
 		let delegate = NSApp.delegate as! AppDelegate
 		moc = delegate.persistentContainer.viewContext
-		updateDatabase(moc)
+        moc.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+		//updateDatabase(moc)
         convertIndicators()
 	}
 	
