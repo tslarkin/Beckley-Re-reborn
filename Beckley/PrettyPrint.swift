@@ -234,7 +234,9 @@ extension Marc {
 		if s.count == 0,
 			let field = fieldByTag("245") {
 			headerIsAuthor = false
-			s = removeTrailingPunctuation(completeText(for: field, "a")!) + "\n"
+            if let text = completeText(for: field, "a") {
+                s = removeTrailingPunctuation(text) + "\n"
+            }
 		}
 		pretty.append(NSAttributedString(string: s))
 		pretty.addAttributes([NSAttributedString.Key.font: headerFont,
